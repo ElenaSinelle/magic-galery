@@ -6,6 +6,51 @@
   font-style: normal;
 }
 
-body {
-  font: normal normal 20px/26px 'Itim', Arial, sans-serif
+:root {
+  --main-text-color: rgb(210, 210, 218);
+}
+html {
+  font: normal normal 20px/26px 'Itim', Arial, sans-serif;
+  color: var(--main-text-color);
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.img_fluid {
+  width: 100%;
+  height: auto;
+}
+
+/*header styles*/
+.header__container {
+  height: 4rem;
+  background: linear-gradient(150deg, rgba(145,153,161,1) 11%, rgba(50,75,99,1) 20%, rgba(3,34,64,0.6641838864452031) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+.logo-box {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header__nav {
+  flex: 0 0 auto;
+  min-width: 50%;
+}
+
+.nav__container {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

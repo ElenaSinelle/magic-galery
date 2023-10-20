@@ -41,7 +41,7 @@ html {
 /*header styles*/
 .header__container {
   height: 4rem;
-  background: linear-gradient(150deg, rgba(145,153,161,1) 11%, rgba(50,75,99,1) 20%, rgba(3,34,64,0.6641838864452031) 100%);
+  background-color: rgba(0, 60, 149, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,4 +68,28 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*section about styles*/
+
+.about {
+  background: linear-gradient(150deg, rgba(253,254,255,1) 11%, rgba(0,55,138,1) 33%, rgba(0,60,149,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about__contents * {
+  padding-bottom: 20px;
+}
+
+.about__contents h2 {
+  color:  rgba(0, 60, 149, 0.7);
+}
+
+.about__img-box {
+  width: 45vw;
 }

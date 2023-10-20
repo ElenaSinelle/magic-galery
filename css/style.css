@@ -1,0 +1,11 @@
+/* general styles*/
+@font-face {
+  font-family: 'Itim';
+  src: url('../assets/fonts/Itim-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font: normal normal 20px/26px 'Itim', Arial, sans-serif
+}

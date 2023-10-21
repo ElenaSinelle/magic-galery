@@ -83,7 +83,7 @@ html {
 }
 
 .about__contents * {
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 .about__contents h2 {
@@ -92,4 +92,102 @@ html {
 
 .about__img-box {
   width: 45vw;
+}
+
+/*animals section styles*/
+.animals {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(150deg, rgba(0,0,0,1) 12%, rgba(3,20,30,1) 100%);
+  height: 80vh;
+}
+
+.animals h2 {
+  text-align: center;
+}
+
+.animals__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.animals__item {
+  padding: 0 0.5rem 0.8rem;
+  /* border: 0.1rem solid rgba(245, 235, 235, 0.667); */
+  border-radius: 0.8rem;
+  width: 23vw;
+}
+
+.animals__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.animals__radio-circle {
+  opacity: 0;
+}
+
+.animals__input-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*arrow styles*/
+.arrow {
+  width: 1rem;
+  height: 1rem;
+  transition: all ease-in 1s;
+  align-self: center;
+}
+
+.arrow-box {
+  background-color: #fff;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/*animal images styles*/
+.animals__img {
+  background-size: cover;
+  width: 0;
+  height: 0;
+  border-radius: 0.8rem;
+  transition: all ease-in 1s;
+}
+
+.cat {
+  background-image: url(../assets/img/jpg/cat.jpg);
+}
+.goldfish {
+  background-image: url(../assets/img/jpg/goldfish.jpg);
+}
+.whale {
+  background-image: url(../assets/img/jpg/whale.jpg);
+}
+.owl {
+  background-image: url(../assets/img/jpg/owl.jpg);
+}
+
+/*animation on input:checked*/
+input:checked ~ .animals__img {
+  width: 20vw;
+  height: 30vw;
+}
+
+input:checked ~ .animals__input-title > .arrow-box > .arrow {
+  transform: rotate(180deg);
+}
+
+input:checked ~ .animals__input-title {
+  cursor: auto;
 }

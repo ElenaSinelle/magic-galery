@@ -22,6 +22,7 @@
 
 :root {
   --main-text-color: rgb(210, 210, 218);
+  --hover-text-color: rgb(54, 54, 85);
 }
 
 html {
@@ -41,6 +42,14 @@ html {
 h2,
 h3 {
   text-align: center;
+}
+
+a {
+  transition: all ease-in 0.3s;
+}
+
+a:hover {
+  color: var(--hover-text-color);
 }
 
 /*header styles*/
@@ -140,6 +149,11 @@ h3 {
   gap: 1rem;
   align-items: center;
   cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.animals__input-title:hover {
+  color: var(--hover-text-color);
 }
 
 /*arrow styles*/
@@ -198,6 +212,10 @@ input:checked ~ .animals__input-title {
   cursor: auto;
 }
 
+input:checked ~ .animals__input-title:hover {
+  color: var(--main-text-color);
+}
+
 /*section tools styles*/
 .tools {
   padding-top: 2rem;
@@ -220,13 +238,24 @@ input:checked ~ .animals__input-title {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .tool {
   width: 27vw;
   height: auto;
   border-radius: 0.8rem;
-  transition: all ease-in 1s;
+  transition: all ease-in 0.5s;
+}
+
+.tools__item h3 {
+  transition: all ease-in 0.3s;
+  cursor: pointer;
+}
+
+.tools__item h3:hover,
+.tool:hover {
+  transform: scale(1.1);
 }
 
 /*footer styles*/
@@ -243,6 +272,11 @@ input:checked ~ .animals__input-title {
   height: 5rem;
   border-radius: 50%;
   cursor: pointer;
+  transition: all ease-in 1s;
+}
+
+.footer__logo-box img:hover {
+  transform: rotate(180deg);
 }
 
 .footer__column2 {

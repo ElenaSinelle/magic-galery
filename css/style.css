@@ -44,6 +44,12 @@ h3 {
 }
 
 /*header styles*/
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 .header__container {
   height: 4rem;
   background-color: rgba(0, 60, 149, 1);
@@ -58,6 +64,7 @@ h3 {
   align-items: center;
   gap: 0.8rem;
 }
+
 .logo-box {
   width: 2rem;
   height: 2rem;
@@ -89,10 +96,6 @@ h3 {
 
 .about__contents * {
   padding-bottom: 1rem;
-}
-
-.about__contents h2 {
-  color:  rgba(0, 60, 149, 0.7);
 }
 
 .about__img-box {
@@ -168,12 +171,15 @@ h3 {
 .cat {
   background-image: url(../assets/img/jpg/cat.jpg);
 }
+
 .goldfish {
   background-image: url(../assets/img/jpg/goldfish.jpg);
 }
+
 .whale {
   background-image: url(../assets/img/jpg/whale.jpg);
 }
+
 .owl {
   background-image: url(../assets/img/jpg/owl.jpg);
 }
